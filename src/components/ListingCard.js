@@ -5,7 +5,7 @@ function ListingCard({listing, handleDelete}) {
   const [liked, setLiked] = useState(false)
 
   const handleLike = () => {
-    setLiked(!liked)
+    setLiked(liked => !liked)
   }
   
   return (
